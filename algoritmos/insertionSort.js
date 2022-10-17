@@ -4,8 +4,7 @@ var insertionSort = function (vetor) {
     for (let i = 2; i < vetor.length; i++) {
         x = vetor[i];
         j = i - 1;
-        vetor[0] = x;
-
+        
         while (x < vetor[j]) {
             vetor[j + 1] = vetor[j];
             j--;
@@ -15,7 +14,7 @@ var insertionSort = function (vetor) {
     }
 }
 
-vetor = [0, 24, 6, 1, 2, 0];
+vetor = [7, 4, -6, 1, -2, 0];
 
 console.log(vetor)
 
